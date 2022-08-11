@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from AnimalShop import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('animalDetail/', views.animalDetailView),
+    path('animal/', views.animalView),
 ]
